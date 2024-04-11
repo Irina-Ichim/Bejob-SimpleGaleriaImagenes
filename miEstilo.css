@@ -38,41 +38,70 @@ p.blue {
 }
 
 .banner {
-    background: linear-gradient(to bottom, blue, #9de8f1);
-    text-align: center;
-    padding: 20px;
-    margin-top: 380px;
-    overflow: hidden; 
+  background: linear-gradient(to bottom, #9de8f1, blue, #9de8f1);
+  text-align: center;
+  padding: 30px;
+  margin-top: 380px;
+  overflow: hidden;
 }
 
 .banner-text {
-    animation: moveText 10s linear infinite;
+  animation: moveText 20s linear infinite;
 }
 
 .banner p {
-    font-size: 24px;
-    margin: 0;
-    color: white;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+a {
+  color: #de43ba;
+  text-decoration: none;
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes moveText {
-    0% {
-        transform: translateX(-100%);
-    }
-    100% {
-        transform: translateX(100%);
-    }
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
 }
 
+.banner-second {
+  background: linear-gradient(to bottom, #9de8f1, blue, #9de8f1);
+  text-align: center;
+  padding: 30px;
+  margin-top: 50px;
+  overflow: hidden;
+}
+
+.banner-second p {
+  font-size: 24px;
+  margin: 0;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: moveTextRightToLeft 20s linear infinite;
+}
+
+@keyframes moveTextRightToLeft {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
 
 footer {
-    position: fixed; 
-    bottom: 0; 
-    width: 100%; 
-    background-color: #333; 
-    color: white; 
-    text-align: center;
-    padding: 20px 0; 
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
 }
-
